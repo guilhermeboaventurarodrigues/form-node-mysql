@@ -12,6 +12,10 @@ const User = db.define('users', {
         type: Sequelize.STRING,
         allowNull: false,
     },
+    idade: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
     email: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -21,5 +25,6 @@ const User = db.define('users', {
 
 //Forçando o código a criar a tabela.
 // User.sync()
+
 
 module.exports = User;
