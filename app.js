@@ -1,4 +1,4 @@
-//Instanciando os modulos express e express-handlebars
+//Instanciando os modulos express e express-handlebars e o bordy-oarser
 const express = require('express');
 const app = express();
 const User = require('./models/User')
@@ -9,9 +9,12 @@ const bodyParser = require('body-parser')
 app.engine('handlebars', handlebarsconst({defaultLayout: 'index'}));
 app.set('view engine', 'handlebars');
 
-
+//BodyParser
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
+
+//Comando para utilizar o css na pasta public
+app.use(express.static('public'));
 
 
 app.use(express.json())
@@ -27,6 +30,7 @@ app.get('/cadastro', async(req, res) => {
 })
 
 app.post("/dadosform", async(req,res) => {
+    res.render('formsucess')
     console.log(req.body);
     await User.create(req.body)
     .then(() => {
@@ -41,8 +45,6 @@ app.post("/dadosform", async(req,res) => {
             mensagem: "Erro: Usuario não cadastrado"
         })
     });
-
-    res.send("FORMULÁRIO ENVIADO COM SUCESSO.");
 });
 
 
