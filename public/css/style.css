@@ -2,3 +2,46 @@
     margin: 0;
     padding: 0;
 }
+
+#form-inteiro{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height:100vh;
+    background-image: url('https://images.unsplash.com/photo-1602108987428-4768d7c7ecbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80');
+}
+
+#titulo-form{
+    text-align: center;
+    background-color: yellow;
+    height: 50px;
+}
+
+input{
+    margin: 20px;
+}
+
+form{
+    background-color: white;
+    border-radius: 20px;
+    padding: 60px;
+    height: 400px;
+    width: 300px;
+}
+
+#div-name{
+    border-radius: 10px;
+}
+
+#form-dentro{
+    margin: 40px;
+    margin: 30px;
+
+}
+
+#sucess-form{
+    text-align: center;
+
+}

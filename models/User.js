@@ -24,7 +24,7 @@ const User = db.define('users', {
 
 
 //Forçando o código a criar a tabela.
-// User.sync()
+User.sync()
 
 
 module.exports = User;

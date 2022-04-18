@@ -22,12 +22,8 @@ app.use(express.json())
 
 //Configurando as rotas
 app.get('/', async(req,res) => {
-    res.render('home');
+    res.render('cadastrar');
 });
-
-app.get('/cadastro', async(req, res) => {
-    res.render('cadastrar')
-})
 
 app.post("/dadosform", async(req,res) => {
     res.render('formsucess')

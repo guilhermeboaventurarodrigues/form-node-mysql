@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize("guilhermebdd", "root", "17072003",{
+const sequelize = new Sequelize("guilhermevideo", "root", "17072003",{
     host: 'localhost',
     dialect: 'mysql'
 })
@@ -11,6 +11,8 @@ sequelize.authenticate()
 }).catch(function(){
     console.log("Erro: conexão com o banco de dados não realizada");
 });
+
+
 
 
 
